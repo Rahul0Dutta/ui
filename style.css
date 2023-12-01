@@ -1,0 +1,266 @@
+:root{
+    --orange:#000000;
+    --black:#918cca;
+    --light-color:#666;
+    --box-shadow:0.5rem 1rem rgba(0,0,0,0,.1);
+    --border: 1rem solid rgba(0,0,0,0,.1);
+    --outline-hover: 2rem solid var(--black);
+}
+
+*{
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+   text-decoration: none;
+   
+   
+}
+    
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+body{
+    background-color:aliceblue;
+}
+section{
+    padding:2rem 9%;
+}
+.heading{
+    text-align: center;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color:var(--black);
+}
+
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    text-align: end;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #000000;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin:0 1rem;
+    color:var(--black);
+}
+
+.header .navbar a:hover{
+    color:var(--orange);
+}
+
+.header .icons div{
+      height: 4.5 rem;
+      width: 4.5 rem;
+      line-height: 4.5 rem;
+      border-radius: .5 rem;
+      background: #f5f5f5;
+      color: var(--black);
+      font-size: 2rem;
+      margin-right: 2rem;
+      text-align: center;
+
+}
+
+
+.home{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+   
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+
+.home .content{
+    text-align: left;
+    width:60rem;
+  
+}
+
+.home .content h3{
+    color:var(--black);
+    font-size: 3rem;
+}
+
+.home .content h3 span{
+   color: #000000;
+}
+
+.home .content p{
+    color:var(--light-color);
+    font-size: 1.7rem;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
+.home .content h3 span{
+    background: var(--orange);
+    color:#fff;
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+.features .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.features .box-container .box{
+    padding:left;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+
+
+.features .box-container .box img{
+    margin:1rem 0;
+    height: 60%;
+    width: 110%;
+}
+
+.features .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color:var(--black);
+}
+
+.features .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color:var(--light-color);
+    padding:1rem 0;
+}
+
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5em;;
+}
+
+.products .box-container .box1{
+    padding:left;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: left;
+  
+}
+.products .box-container .box1 h1{
+    font-size: 2.5rem;
+    line-height: 1.8rem;
+    color:black;
+}
+
+.products .box-container .box1 h3{
+    font-size: 2rem;
+    line-height: 1.8;
+    color:#918cca;
+}
+
+.products .box-container .box1 p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color:var(--light-color);
+    padding:1rem 0;
+}
+.products .box-container .box1 .links{
+    display: block;
+    font-size: 3rem;
+    color:var(--light-color);
+    padding:1rem 0;
+}
+.products .box-container .box1 .links i{
+    color:var(--orange);
+   
+}
+.products .box-container .box1 .links:hover i{
+    padding-right: 2rem;
+}
+
+.products .box-container .box2 h3{
+    font-size: 2rem;
+    line-height: 1.8;
+    color:#918cca;
+    text-align: right;
+}
+
+.footer{
+    background: #fff;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 11fr));
+    gap:0.1rem;
+    
+}
+
+.footer .box-container .box h1{
+    font-size: xx-large;
+    color:var(--black);
+    padding:1rem 0;
+}
+
+.footer .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color:var(--light-color);
+    padding:1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
